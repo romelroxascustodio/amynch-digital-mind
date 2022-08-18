@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+     body {
+          font-family: 'Inter', sans-serif;
+     }
+
+     .navbar-mobile-menu-item {
+          @apply my-5;
+     }
+
+     .navbar-mobile-menu-link {
+          @apply text-xl tracking-tight;
+     }
+
+     .navbar-mobile-menu-item:last-child .navbar-mobile-menu-link {
+          @apply inline-flex items-center bg-primary text-white px-6 min-h-[3.5rem] rounded-[30px] text-lg;
+     }
+
+     .navbar-mobile-menu-link.active {
+          @apply text-primary;
+     }
+
+     .home-services-tabpanel-content-button {
+          @apply inline-flex items-center justify-center bg-primary text-white font-semibold tracking-tight rounded min-h-[3.5rem] px-8 hover:bg-secondary transition-all duration-300 ease-in;
+     }
+
+     .about-banner {
+          @apply bg-[url('../img/banner/about.jpg')];
+     }
+
+     .why-choose-us-accordion-card {
+          @apply mb-6;
+     }
+
+     .why-choose-us-accordion-card-header {
+          @apply relative bg-primary border-primary border-b-[5px] border-solid text-white p-6 flex items-center cursor-pointer;
+     }
+
+     .why-choose-us-accordion-card-header-heading {
+          @apply text-lg md:text-2xl font-bold tracking-tight mr-auto;
+     }
+
+     .why-choose-us-accordion-card-header-icon {
+          @apply ml-auto text-xl pl-4;
+     }
+
+     .why-choose-us-accordion-card:not(.active) .why-choose-us-accordion-card-body {
+          @apply invisible opacity-0 max-h-0 py-0;
+     }
+
+     .why-choose-us-accordion-card.active .why-choose-us-accordion-card-header-icon::before {
+          content: "\f068";
+     }
+
+     .why-choose-us-accordion-card-body {
+          @apply block visible opacity-100 max-h-screen bg-secondary text-white text-[14px] sm:text-[16px] p-6 transition-all duration-300 ease-in;
+     }
+
+     .services-banner {
+          @apply bg-[url('../img/banner/services.jpg')];
+     }
+
+     .services-image-wrapper {
+          @apply px-4 mb-4 md:mb-0;
+     }
+
+     .services-image {
+          @apply block max-w-full h-auto;
+     }
+
+     .services-content-wrapper {
+          @apply px-4 text-center md:text-left;
+     }
+
+     .services-content-heading {
+          @apply text-[30px] font-extrabold tracking-tight mb-4;
+     }
+
+     .services-content-paragraph {
+          @apply text-base leading-loose mb-4;
+     }
+
+     .services-content-button {
+          @apply inline-flex items-center justify-center bg-primary text-white font-semibold tracking-tight rounded min-h-[3.5rem] px-8 hover:bg-secondary transition-all duration-300 ease-in;
+     }
+
+     .contact-banner {
+          @apply bg-[url('../img/banner/contact.jpg')];
+     }
+
+     .footer-bottom-social-item {
+          @apply mx-2 md:ml-4 md:mr-0;
+     }
+}

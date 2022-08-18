@@ -1,0 +1,168 @@
+/* ----- Footer ----- */
+
+.footer {
+
+     .footer-top {
+          position: relative;
+          background: linear-gradient(45deg, #00138e, #0c5adb);
+          padding-top: 60px;
+          padding-bottom: 60px;
+
+          .footer-top-container {
+
+               .footer-top-row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    // justify-content: space-between;
+
+                    .footer-top-column {
+
+                         // .footer-top-about {
+
+                         // }
+
+                         .footer-contact {
+
+                              .footer-contact-wrapper {
+
+                                   .footer-contact-item {
+                                        display: flex;
+                                        align-items: center;
+                                        margin-right: 1rem;
+                                        line-height: 1;
+                                        color: $color-primary-light;
+
+                                        .footer-contact-left {
+                                             margin-right: 0.25rem;
+
+                                             .footer-contact-icon {
+                                                  font-size: 40px;
+                                             }
+                                        }
+
+                                        .footer-contact-right {
+
+                                             .footer-contact-link {
+                                                  display: block;
+                                                  color: $color-primary-light;
+                                                  font-size: 14px;
+                                                  font-weight: 400;
+                                                  margin-top: 5px;
+                                                  margin-bottom: 5px;
+
+                                                  &:hover {
+                                                       text-decoration: underline;
+                                                  }
+                                             }
+                                             
+                                             .footer-contact-paragraph {
+                                                  display: block;
+                                                  color: $color-primary-light;
+                                                  font-size: 16px;
+                                                  font-weight: 400;
+                                             }
+                                        }
+                                   }
+                              }
+                         }
+
+                         .footer-menu {
+
+                              // .footer-menu-heading {
+                              // }
+
+                              .footer-menu-wrapper {
+
+                                   .footer-menu-item {
+
+                                        .footer-menu-link {
+                                             display: block;
+                                             color: rgba(255, 255, 255, 0.7);
+                                             font-size: 16px;
+                                             padding: 5px 0px 10px;
+                                             transition: all 300ms ease;
+
+                                             &:hover {
+                                                  color: $color-primary-light;
+                                                  text-decoration: underline;
+                                             }
+                                        }
+                                   }
+                              }
+                         }
+
+                         .footer-services {
+
+                              .footer-services-heading {
+                                   font-family: $font-family-secondary;
+                                   letter-spacing: -0.025em;
+                              }
+
+                              .footer-services-wrapper {
+
+                                   .footer-services-item {
+
+                                        .footer-services-link {
+                                             display: block;
+                                             color: rgba(255, 255, 255, 0.7);
+                                             font-size: 16px;
+                                             padding: 5px 0px 10px;
+                                             transition: all 300ms ease;
+
+                                             &:hover {
+                                                  color: $color-primary-light;
+                                                  text-decoration: underline;
+                                             }
+                                        }
+                                   }
+                              }
+                         }
+                    }
+               }
+          }
+     }
+
+     .footer-bottom {
+          position: relative;
+          background-color: $color-secondary;
+          padding-top: 25px;
+          padding-bottom: 25px;
+
+          .footer-bottom-container {
+
+               .footer-bottom-row {
+
+                    .footer-bottom-column {
+
+                         // .footer-bottom-copyright {
+                              
+                         // }
+
+                         .footer-bottom-social {
+
+                              .footer-bottom-social-wrapper {
+
+                                   .footer-bottom-social-item {
+
+                                        .footer-bottom-social-link {
+                                             background-color: $color-primary-light;
+                                             color: $color-primary;
+                                             border-radius: 100%;
+                                             height: 40px;
+                                             width: 40px;
+                                             display: flex;
+                                             align-items: center;
+                                             justify-content: center;
+
+                                             .footer-bottom-social-icon {
+                                                  color: $color-primary;
+                                             }
+                                        }
+                                   }
+                              }
+                         }
+                    }
+               }
+          }
+     }
+}
